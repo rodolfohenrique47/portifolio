@@ -1,0 +1,610 @@
+/* Desenvolvido por Rodolfo Henrique */
+/* -------------------------------------*/
+
+/* importação fontes google */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* -------------------------*/
+
+
+/* Reset Css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 100%;
+}
+
+/*-----------*/
+
+/* variveis */
+
+:root {
+    --cor-de-fundo-do-site: #090E16;
+    --cor-fonte-titulos: #ffffff;
+    --cor-fonte-paragrafo:  #ffffff94;
+    --cor-fonte-secundario: #7B4AE2;
+    --fonte-familia-texto: 'raleway';
+    --cor-fonte-hover: #ffffff;
+    --cor-background-caixa: #2a1e41;
+    --cor-background-caixa-pequena: #20b364;
+}
+
+/* ----------*/
+
+/* corpo do site */
+
+body {
+    background-color: var(--cor-de-fundo-do-site);
+    color: var(--cor-fonte-titulos);
+    font-family: var(--fonte-familia-texto);
+}
+
+/* --------------*/
+
+/* cabecalho */
+
+
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em 8.75em 0 8.75em;
+    background-color: #7B4AE20D;
+    border-radius: 0.5em;
+}
+
+.cabecalho {
+    padding: 0.4em 0 0.4em 1em;
+}
+
+.lista__item a {
+    color: var(--cor-fonte-paragrafo);
+    font-weight: 400;
+    font-size: 1.2em;
+    margin-right: 1em;
+}
+
+
+/*-----------*/
+
+/*--- section aprensentacao  -------*/
+
+.caixa__cabecalho__apresentacao {
+    height: 100vh;
+}
+
+.apresentacao {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    align-items: center;
+    text-align: center;
+    margin: 1em 0 0 0;
+    
+}
+
+.caixa__texto__saudacao {
+    font-size: 1.3em;
+    color: var(--cor-fonte-secundario);
+    font-weight: 400;
+    margin: 0 0 1.5em 0;
+    background-color: var(--cor-background-caixa);
+    width: 8em;
+    border-radius: 1em;
+    padding: 0.5em;
+}
+
+.caixa__titulo {
+    font-size: 3em;
+    font-weight: 700;
+    margin: 0 0 1em 0;
+}
+
+.caixa__texto__paragrafo {
+    font-size: 1.3em;
+    color: var(--cor-fonte-paragrafo);
+    margin: 0 0 1em 0;
+}
+
+.caixa__imagem {
+    margin: 0 0.5em 0 0;
+}
+
+.apresentacao__caixa {
+    text-align: left;
+    margin: 0 0 0 4em;
+}
+
+.apresentacao__avatar {
+    width: 80%;
+}
+
+.caixa__lista__links {
+    list-style-type: none;
+    text-align: right;
+    margin: 0 5em 0 0;
+}
+.caixa__link {
+    font-size: 1em;
+    color: var(--cor-fonte-secundario);
+}
+
+.curriculum {
+    margin: 0 0em 1em 0;
+}
+
+.image__seta{
+    margin-left: 1em;
+    
+}
+
+.image__whatsapp {
+    margin-right: 1em;
+}
+
+.whatsapp {
+    border: 0.05em solid var(--cor-fonte-secundario);
+    padding: 0.6em;
+    border-radius: 1em;
+    margin-left: 8em;
+}
+
+.chamada_whats {
+    font-size: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.apresentacao__avatar {
+    margin: 0 0 0 3em;
+}
+
+
+/* -----------------------------------*/
+
+/*---------- secao experiencia ----------*/
+
+.experiencia {
+    height: 100vh;
+    border-top: 0.1em solid var(--cor-background-caixa);
+    padding: 7em;
+}
+
+.caixa__experiencia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    
+    
+}
+
+.container__experiencia {
+    border: 0.1em solid var(--cor-fonte-secundario);
+    width: 15em;
+    height: 10em;
+    border-radius: 1em;
+    padding-top: 1em;
+}
+
+.caixa_2 {
+    padding-top: 2em;
+    background-color: var(--cor-background-caixa);
+}
+
+.experiencia_2 {
+    background-color: var(--cor-background-caixa);
+    margin: 7em 3.7em 0 3.7em;
+    border-radius: 0.5em;
+    height: 7em;
+}
+
+.experiencia_2_texto {
+    margin-bottom: 0.5em;
+    font-size: 1em;
+    color: var(--cor-fonte-secundario);
+}
+
+.experiencia_2_titulo {
+    font-size: 2em;
+    color: var(--cor-fonte-secundario);
+}
+
+
+/*-------------------FIM DA SEÇÃO EXPERIENCIA--------------------*/
+
+/*-------------------INICIO DA SECAO SOBRE MIM ------------------*/
+
+.sobre__mim {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.sobre__mim__avatar {
+    width: 35%;
+}
+
+.sobre_titulo {
+    font-size: 2.5em;
+    text-align: left;
+}
+
+.sobre__mim__container__textos {
+    padding-bottom: 5em;
+    padding-top: 5em;
+}
+
+.sobre_texto {
+    font-size: 1em;
+    text-align: left;
+    line-height: 1em;
+}
+
+.l1 {
+    margin-bottom: 2em;
+}
+
+.l5 {
+    margin-top: 2em;
+}
+
+
+/* ------------------FIM DA SECAO SOBRE MIM -----------------------*/
+
+/* -------------------INICIO DA SEÇÃO PORTIFOLIO -------------------*/
+
+.secao__portifolio {
+    height: 100vh;
+
+}
+
+.secao__portifolio__titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+
+.portifolio__container__textos {
+    margin: 1.5em 0 2em 1em;
+
+}
+
+.portifolio__container__paragrafo {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 1em;
+    color: var(--cor-fonte-secundario);
+    background-color: var(--cor-background-caixa);
+    border-radius: 1em;
+    width: 8em;
+    padding: 1em;
+}
+
+
+
+.portifolio__container__subtitulo {
+    font-weight: 500;
+    font-size: 2.3em;
+    color: var(--cor-fonte-titulos);
+
+}
+
+
+
+
+.portifolio__habilidades {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1em;
+}
+
+.habilidade__caixa {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: transparent;
+    border-radius: 0.2em;
+    margin: 0 2em 0 0;
+    width: 16em;
+    padding: 1em;
+    border: 0.2em solid var(--cor-background-caixa);
+}
+
+.habilidade_caixa_2 {
+    background-color: var(--cor-background-caixa);
+}
+
+
+
+
+.portifolio__habilidades_imagem {
+    width: 1.2em;
+
+}
+
+.portifolio__habilidades__textos {
+    font-size: 1em;
+    margin-right: 3em;
+    
+}
+
+
+
+/* COOMEÇO PORTIFOLIO  ARTIGO */ 
+
+.artigo__portifolio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    justify-content: space-evenly;
+}
+
+.artigo__portifolio__container {
+    width: 25%;
+    margin: 3em 0 0 0;
+    border: 0.2em solid var(--cor-background-caixa);
+    border-radius: 1em;
+    padding: 1em;
+}
+
+.artigo__portifolio__h2 {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.artigo__portifolio__texto {
+    font-size: 0.9em;
+    color: var(--cor-fonte-paragrafo);
+    margin: 2em 0 5em 0;
+}
+
+.artigo__portifolio__imagem{
+    width: 18em;
+}
+
+.artigo__portifolio__container__tecnologia {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    margin-bottom: 1.5em;
+}
+
+.container__tecnologia {
+    color: var(--cor-fonte-paragrafo);
+    border-radius: 0.5em;
+    background-color: var(--cor-fonte-secundario);
+    padding: 0.7em;
+    font-weight: 600;
+}
+
+.tecnologia_online {
+    background-color: var(--cor-background-caixa-pequena);
+    color: var(--cor-fonte-paragrafo);
+    font-weight: 600;
+
+}
+
+.portifolio_container2, .portifolio_container6 {
+    background-color: var(--cor-background-caixa);
+}
+
+.portifolio__link {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 1em;
+    font-size: 1.2em;
+    text-align: right;
+    margin: 2em 4em 3em 0;
+    font-weight: 500;
+    color: var(--cor-fonte-secundario);
+    
+    
+    
+}
+
+
+
+/* FIM PORTIFOLIO ARTIGO */
+
+
+
+
+
+/*--------------pseudoclass----------------------*/
+
+.cabecalho__link:hover {
+    color: var(--cor-fonte-hover);
+
+}
+
+
+/*-----Inicio de Responsividade-------*/
+
+
+/* remover o cabeçaho */
+@media screen and (max-width: 768px) {
+        .cabecalho{
+            display: none;
+        }
+
+        .apresentacao {
+            display: block;
+        }
+
+       .apresentacao__caixa {
+            margin: 2em 0 0 1em;
+            text-align: center;
+       }
+
+       .caixa__texto__saudacao {
+          
+          font-size: 0.8em;
+          margin-left: 2.2em;
+       }
+
+       .caixa__titulo {
+            text-align: center;
+            margin: 0 0 0.10em 0;
+       }
+
+       .caixa__texto__paragrafo {
+            margin: 0 0 2em 0;
+       }
+
+       .caixa__imagem {
+            margin: 0 0 2em 0;
+       }
+
+       .apresentacao__avatar {
+            width: 50%;
+            margin: 0 0 2em 0;
+       }
+
+       .caixa__lista__links {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin-left: 7em;
+
+       }
+
+       .whatsapp {
+            border: none;
+       }
+
+       .chamada_whats {
+            margin-bottom: 1.2em;
+       }
+
+       .experiencia {
+            border: none;
+       }
+
+       .caixa__experiencia {
+            flex-direction: column;
+            gap: 2em;
+            margin-top: 10em;
+            
+       }
+
+       .experiencia_2 {
+            display: none;
+       }
+
+       .sobre__mim {
+            flex-direction: column;
+            margin-top: 25em;
+       }
+
+       .sobre_titulo {
+            margin-bottom: 1.8em;
+            font-size: 1.4em;
+            
+       }
+
+       .sobre__mim__avatar {
+            margin-bottom: -2em;
+       }
+
+       .sobre__mim__container__textos {
+        
+            font-size: 1.2em;
+            margin-right: 1.5em;
+            margin-left: 1.3em;
+            line-height: 0.5em;
+            text-align: center;
+            align-items: center;
+       }
+
+       .sobre_texto {
+            margin-bottom: 0.8em;
+            text-align: justify;
+       }
+
+       .l5 {
+            margin-top: 2.5em;
+       }
+
+       .saudacao_apresentacao {
+            margin-left: 4em;
+       }
+
+       .saudacao_sobre {
+            margin-bottom: 2.5em;
+       }
+
+       .secao__portifolio {
+            display: flex;
+            flex-direction: column;
+            margin-top: 15em;
+       }
+
+       .secao__portifolio__titulo {
+            display: block;
+       }
+
+       .portifolio__habilidades {
+            display: block;
+       }
+
+       .habilidade__caixa {
+            margin: 0 auto;
+            margin-bottom: 1em;
+       }
+
+       .artigo__portifolio {
+            display: block;
+       }
+
+       .artigo__portifolio__container {
+            width: 70%;
+            text-align: center;
+            margin: 0 auto;
+            margin-bottom: 2em;
+            margin-top: 2em;
+       }
+
+       .artigo__portifolio__imagem {
+            width: 65%;
+       }
+
+       .container__tecnologia {
+            width: 8em;
+            margin: 0 auto;
+       }
+
+
+ 
+
+}
+
+
+
+/*------------FIM DA RESPONSIVIDADE---------------*/
+
+
+
+
+
